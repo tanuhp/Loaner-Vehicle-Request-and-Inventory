@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-08-07 02:12:56</sys_created_on>
-        <sys_id>632f6fee933b02106355f5f08bba10d4</sys_id>
+        <sys_created_on>2024-08-19 18:38:10</sys_created_on>
+        <sys_id>19b341ba93c012106355f5f08bba107e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1292527_lva_vehicle_servicing.x_1292527_lva.vehicle_servicing_user</sys_name>
+        <sys_name>x_1292527_lva_vehicle_servicing.admin</sys_name>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva">1e56b9c293bf42106355f5f08bba1032</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</sys_scope>
         <sys_security_acl display_value="x_1292527_lva_vehicle_servicing">a32f6fee933b02106355f5f08bba10d1</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_632f6fee933b02106355f5f08bba10d4</sys_update_name>
+        <sys_update_name>sys_security_acl_role_19b341ba93c012106355f5f08bba107e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-07 02:12:56</sys_updated_on>
-        <sys_user_role display_value="x_1292527_lva.vehicle_servicing_user" name="x_1292527_lva.vehicle_servicing_user">c72feb6a933b02106355f5f08bba108f</sys_user_role>
+        <sys_updated_on>2024-08-19 18:38:10</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
     </sys_security_acl_role>
 </record_update>

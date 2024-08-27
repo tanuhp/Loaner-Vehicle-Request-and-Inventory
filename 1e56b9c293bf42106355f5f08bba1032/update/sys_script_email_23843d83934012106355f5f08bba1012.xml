@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>Get dateNeeded Variable on LVA Notification</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+    var dateNeeded = current.variables.date_needed;
+    template.print(dateNeeded);
+	email.setSubject(dateNeeded);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 16:52:58</sys_created_on>
+        <sys_id>23843d83934012106355f5f08bba1012</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get dateNeeded Variable on LVA Notification</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva">1e56b9c293bf42106355f5f08bba1032</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</sys_scope>
+        <sys_update_name>sys_script_email_23843d83934012106355f5f08bba1012</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 17:00:26</sys_updated_on>
+    </sys_script_email>
+</record_update>

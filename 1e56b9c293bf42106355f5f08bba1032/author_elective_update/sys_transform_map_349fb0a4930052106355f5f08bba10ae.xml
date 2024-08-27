@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>u_imp_tmpl_rm_story</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>u_imp_tmpl_rm_story</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-12 18:33:33</sys_created_on>
+        <sys_id>349fb0a4930052106355f5f08bba10ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_rm_story</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva">1e56b9c293bf42106355f5f08bba1032</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</sys_scope>
+        <sys_update_name>sys_transform_map_349fb0a4930052106355f5f08bba10ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-12 18:33:33</sys_updated_on>
+        <target_table>rm_story</target_table>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</application>
+        <file_path/>
+        <instance_id>1b2ae736dba63d9005ef172913961999</instance_id>
+        <instance_name>dev218926</instance_name>
+        <name>sys_transform_map_349fb0a4930052106355f5f08bba10ae</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;u_imp_tmpl_rm_story&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;u_imp_tmpl_rm_story&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-12 18:33:33&lt;/sys_created_on&gt;&lt;sys_id&gt;349fb0a4930052106355f5f08bba10ae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_imp_tmpl_rm_story&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva"&gt;1e56b9c293bf42106355f5f08bba1032&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;1e56b9c293bf42106355f5f08bba1032&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_349fb0a4930052106355f5f08bba10ae&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-12 18:33:33&lt;/sys_updated_on&gt;&lt;target_table&gt;rm_story&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-990034665</payload_hash>
+        <record_name>u_imp_tmpl_rm_story</record_name>
+        <reverted_from/>
+        <source>a548754693bf42106355f5f08bba10c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-12 18:33:33</sys_created_on>
+        <sys_id>f09fb0a4930052106355f5f08bba10b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19147ddf3a40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-12 18:33:33</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>b49fb0a4700052109e886ec565a59eb0</update_guid>
+        <update_guid_history>b49fb0a4700052109e886ec565a59eb0:-990034665</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 03:21:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>0c1e192cdfc44e9286a2fd2c0ab832c9</sys_id>
+        <sys_metadata>349fb0a4930052106355f5f08bba10ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_rm_story</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva">1e56b9c293bf42106355f5f08bba1032</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</sys_scope>
+        <sys_scope_delete display_value="">3b852a36ec8b4bac8f04d550965f8890</sys_scope_delete>
+        <sys_update_name>sys_transform_map_349fb0a4930052106355f5f08bba10ae</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_349fb0a4930052106355f5f08bba10ae">f09fb0a4930052106355f5f08bba10b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 03:21:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
