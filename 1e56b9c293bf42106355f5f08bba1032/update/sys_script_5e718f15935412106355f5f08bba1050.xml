@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1292527_lva_vehicle_tracker</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1292527_lva_vehicle_tracker">vehicle_statusVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="vehicle_status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Vehicle Status on Vehicle Catalog</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    var lvc = new GlideRecord('x_1292527_lva_loaner_vehicle_catalog');
+    lvc.addQuery('sys_id', current.vehicle);
+    lvc.query();
+    if (lvc.next()) {
+        if ((current.vehicle_status == 'pending_release') || (current.vehicle_status == 'out_on_field') || (current.vehicle_status == 'returned_for_inspection') || (current.vehicle_status == 'sent_for_servicing')) {
+            lvc.status = 'unavailable';
+        }
+        else if (current.vehicle_status == 'returned_to_warehouse') {
+            lvc.status = 'available';
+        }
+        else if (current.vehicle_status == 'decommissioned') {
+            lvc.status = 'decommissioned';
+        }
+        lvc.update();
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 22:32:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e718f15935412106355f5f08bba1050</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Set Vehicle Status on Vehicle Catalog</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva">1e56b9c293bf42106355f5f08bba1032</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</sys_scope>
+        <sys_update_name>sys_script_5e718f15935412106355f5f08bba1050</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-28 23:45:47</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5e718f15935412106355f5f08bba1050"/>
+</record_update>

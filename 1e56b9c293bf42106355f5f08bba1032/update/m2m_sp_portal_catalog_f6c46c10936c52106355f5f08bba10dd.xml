@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Loaner Vehicle Catalog">5084201c932c52106355f5f08bba102d</sc_catalog>
+        <sp_portal display_value="Loaner Vehicle Request Portal">11a03cf193d412106355f5f08bba102d</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-05 18:29:29</sys_created_on>
+        <sys_id>f6c46c10936c52106355f5f08bba10dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loaner Vehicle Catalog.Loaner Vehicle Request Portal</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1292527_lva">1e56b9c293bf42106355f5f08bba1032</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">1e56b9c293bf42106355f5f08bba1032</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_f6c46c10936c52106355f5f08bba10dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-05 18:29:29</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>
